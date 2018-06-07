@@ -1,0 +1,9 @@
+# roles/postgresql/tasks/apply.yml
+---
+- name: apply | packages
+  package:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - postgresql
+

@@ -1,0 +1,18 @@
+# roles/postgresql/tasks/main.yml
+---
+- import_tasks: apply.yml
+  tags:
+    - apply
+
+- import_tasks: configure.yml
+  tags:
+    - configure
+
+#- include: initialize.yml
+#  tags:
+#    - initialize
+
+#- include: check.yml
+#  tags:
+#    - check
+#

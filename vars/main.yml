@@ -1,0 +1,7 @@
+# roles/mesos-common/vars/main.yml
+---
+postgresql:
+  conf_dir: "/etc/postgresql"
+  log_dir: "/var/log/postgresql"
+  lib_dir: "/var/lib/postgresql"
+  run_dir: "/var/run/postgresqld"

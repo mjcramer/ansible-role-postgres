@@ -1,0 +1,5 @@
+# roles/postgresql/tasks/check.yml
+---
+- name: check | postgresql port
+  wait_for:
+    port: "{{ postgresqld_config_port }}"

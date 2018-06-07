@@ -1,0 +1,5 @@
+# roles/postgresql/tasks/initialize.yml
+---
+#- name: Ensure postgresql is started and enabled on boot.
+#  service: "name={{ postgresql_daemon }} state=started enabled={{ postgresql_enabled_on_startup }}"
+#  register: postgresql_service_configuration./bin/mesos-tests.sh --help

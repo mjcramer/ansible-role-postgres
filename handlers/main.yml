@@ -1,0 +1,9 @@
+# roles/postgresql/handlers/main.yml
+---
+- include: handlers/system.yml
+
+- name: restart postgresqld
+  service:
+    name: postgresqld
+    state: restarted
+    sleep: 5
