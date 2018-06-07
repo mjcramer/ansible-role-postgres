@@ -1,2 +1,22 @@
-# roles/mesos-common/meta/main.yml
+# postgresql/meta/main.yml
 ---
+dependencies:
+  - role: mjcramer.system
+  - role: mjcramer.java
+
+galaxy_info:
+  author: Michael Cramer
+  description: Ansible role for installing a PostgreSQL database
+  license: Unlicensed
+  min_ansible_version: 2.0
+  platforms:
+  - name: Ubuntu
+    versions:
+    - zesty
+  - name: EL
+    versions:
+    - 7
+  galaxy_tags:
+    - postgresql
+    - postgres
+    - installer
