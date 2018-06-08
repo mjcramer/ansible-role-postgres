@@ -3,11 +3,7 @@ language: python
 python: "2.7"
 sudo: required
 
-services:
-  - docker
-
 env:
-  COMPOSE_VERSION: 1.4.1
   - ANSIBLE_CONFIG=tests/ansible.cfg
 
 before_install:
@@ -33,6 +29,4 @@ script:
     || (echo 'Idempotence: FAIL' && exit 1)
 
 notifications:
-  email: true
-  webhooks: https://galaxy.ansible.com/api/v1/notifications/
-
+    webhooks: https://galaxy.ansible.com/api/v1/notifications/
